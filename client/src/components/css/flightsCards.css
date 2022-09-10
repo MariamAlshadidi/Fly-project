@@ -1,0 +1,17 @@
+.nav-link  {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+  
+  .nav-link .active  {
+    text-decoration: underline;
+    color: #FDC300;
+    font-weight: 500;
+    background-color: blue;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+    color: rgb(97, 94, 94);
+  }
