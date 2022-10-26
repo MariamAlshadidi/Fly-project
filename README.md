@@ -1,11 +1,10 @@
 <h1 align="center">
-🌐 MERN Stack
+🌐Fly-Booking MERN Stack
 </h1>
 <p align="center">
 MERN is a fullstack implementation in MongoDB, Expressjs, React.js, Nodejs
 </p>
 
-MERN stack is the idea of using Javascript/Node for fullstack web development.
 
 ## clone or download
 ```terminal
@@ -14,7 +13,6 @@ $ yarn # or npm i
 ```
 ## project structure
 ```terminal
-LICENSE
 package.json
 server/
    package.json
@@ -57,3 +55,14 @@ run the script at the first level:
 $ cd server
 $ echo "JWT_SECRET=YOUR_JWT_SECRET" >> src/.env
 ```
+# Dependencies(tech-stacks)
+Client-side | Server-side
+--- | ---
+bootstrap: ^5.2.0" | jquery: ^3.6.1
+axios: ^0.27.2 | bcrypt-nodejs: ^5.0.1
+jsonwebtoken: ^8.5.1 | cors: ^2.8.1
+react: ^18.2.0 | dotenv: ^16.0.2
+react-dom: ^18.2.0 | express: ^4.18.1
+react-router-dom: ^5.3.3 | mongoose: ^4.7.4
+
+
