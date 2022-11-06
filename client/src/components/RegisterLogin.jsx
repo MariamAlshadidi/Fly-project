@@ -4,10 +4,15 @@ import { useHistory } from 'react-router-dom'
 import React from 'react'
 import './css/RegisterTest.css'
 import UserContext from "../context/userContext";
+import $ from 'jquery';
 
 function RegisterTest() {
   const context = React.useContext(UserContext)
 
+    React.useEffect(() => {
+    $('#tab-1').prop('checked', true);
+  }, [])
+	
   const [user, setUser] = React.useState({
     username: '',
     email: '',
@@ -97,6 +102,18 @@ function RegisterTest() {
       })
 
   };
+	
+const toggleClick = () => {
+    $('#tab-1').prop('checked', true);
+    $('#tab-2').prop('checked', false);
+}
+
+const toggleClick2 = () => {
+  $('#tab-1').prop('checked', false);
+  $('#tab-2').prop('checked', true);
+}
+
+
   return (
       <>
      <div className="error">
@@ -105,8 +122,8 @@ function RegisterTest() {
       ))}
       <div class="login-wrap">
 	<div class="login-html">
-		<input id="tab-1" type="radio" name="tab" class="sign-in" checked /> <label for="tab-1" class="tab"> Sign In</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up" /><label for="tab-2" class="tab">Sign Up</label>
+		<input id="tab-1" type="checkbox" name="tab" class="sign-in" onClick={toggleClick}/> <label for="tab-1" class="tab"> Sign In</label>
+		<input id="tab-2" type="checkbox" name="tab" class="sign-up" onClick={toggleClick2} /><label for="tab-2" class="tab">Sign Up</label>
 		
         <div class="login-form">
         <form onSubmit={handleLogin} class="sign-in-htm"  >
