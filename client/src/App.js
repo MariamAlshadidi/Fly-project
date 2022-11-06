@@ -13,9 +13,8 @@ import UserContext from './context/userContext'
 import React from 'react';
 import Wrapper from './components/Wrapper';
 import Boarding from './components/Boarding';
-
 import Paypal from './components/Paypal';
-import RegisterTest from './components/RegisterTest'
+
 function App() {
   const [userlogged, setUserlogged] = React.useState()
 
@@ -38,7 +37,7 @@ function App() {
               </Route>
 
               <Route exact path='/signup'>
-                <RegisterTest />
+                <RegisterLogin />
               </Route>
 
 
